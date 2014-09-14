@@ -67,15 +67,6 @@
                                     <rect key="frame" x="234" y="72" width="80" height="80"/>
                                 </variation>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtj-sR-5ZA">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="80" width="205" height="88"/>
-                                </variation>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTO-GK-tYI">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -105,24 +96,44 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DSt-cl-kPa"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZp-0n-267">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="210" height="50"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtj-sR-5ZA">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="130" width="205" height="44"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="GDP-Ub-FRj"/>
-                                <exclude reference="mtj-sR-5ZA"/>
                                 <exclude reference="xTO-GK-tYI"/>
                                 <exclude reference="0FY-4n-WcS"/>
                                 <exclude reference="rEu-GR-hEZ"/>
+                                <exclude reference="wZp-0n-267"/>
+                                <exclude reference="mtj-sR-5ZA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="GDP-Ub-FRj"/>
-                                <include reference="mtj-sR-5ZA"/>
                                 <include reference="xTO-GK-tYI"/>
                                 <include reference="0FY-4n-WcS"/>
                                 <include reference="rEu-GR-hEZ"/>
+                                <include reference="wZp-0n-267"/>
+                                <include reference="mtj-sR-5ZA"/>
                             </mask>
                         </variation>
                     </view>
@@ -133,11 +144,12 @@
                         <outlet property="enterNameTextField" destination="xTO-GK-tYI" id="X3o-X2-nXU"/>
                         <outlet property="mailButton" destination="rEu-GR-hEZ" id="ypw-ah-AdD"/>
                         <outlet property="messageLabel" destination="mtj-sR-5ZA" id="ZyX-zV-2sM"/>
+                        <outlet property="nameLabel" destination="wZp-0n-267" id="07v-XW-Rlv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.5" y="135"/>
+            <point key="canvasLocation" x="847.5" y="179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pbj-8C-MXA">
